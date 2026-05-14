@@ -70,7 +70,7 @@ publish-pages:
   <<: *defaults
   stage: publish
   pages: 
-    publish: public
+    publish: true
   script:
     - npm run build:examples
   artifacts:
