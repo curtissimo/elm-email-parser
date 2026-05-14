@@ -69,14 +69,15 @@ verify-examples:
 publish-pages:
   <<: *defaults
   stage: publish
-  pages: true
+  pages: 
+    publish: public
   script:
     - npm run build:examples
   artifacts:
     paths:
       - public/
-  rules:
-    - if: $CI_COMMIT_TAG
+  # rules:
+    # - if: $CI_COMMIT_TAG
 
 
 publish-elm-package:
