@@ -25,7 +25,7 @@ variables:
       policy: pull
   before_script:
     - npm ci --cache .npm --prefer-offline --ignore-scripts
-    - npx elm make --optimize --output=/dev/null src/Curtissimo/EmailParser.elm
+    - npx elm make --optimize --output=/dev/null src/Curtissimo/Email.elm
   script:
     - echo "Base job"
 
@@ -45,7 +45,7 @@ prime:
   stage: cache
   script: 
     - npm ci --cache .npm --prefer-offline --ignore-scripts
-    - npx elm make --optimize --output=/dev/null src/Curtissimo/EmailParser.elm
+    - npx elm make --optimize --output=/dev/null src/Curtissimo/Email.elm
 
 lint:
   <<: *defaults
