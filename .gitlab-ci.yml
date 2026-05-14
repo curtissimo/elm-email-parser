@@ -69,8 +69,7 @@ verify-examples:
 publish-pages:
   <<: *defaults
   stage: publish
-  pages: 
-    publish: true
+  pages: true
   script:
     - npm run build:examples
   artifacts:
