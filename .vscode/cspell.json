@@ -1,0 +1,20 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "adul",
+    "curtissimo",
+    "pers",
+    "Schlak",
+    "Taglialegne",
+    "ρεrso"
+  ],
+  "ignoreWords": [
+    "inputmode"
+  ],
+  "flagWords": [],
+  "ignorePaths": [
+    "**/elm.json",
+    "**/ReviewConfig.elm"
+  ]
+}

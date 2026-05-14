@@ -1,0 +1,6 @@
+{
+  "tests": [
+    "Curtissimo.Email",
+    "./README.md"
+  ]
+}

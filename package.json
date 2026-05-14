@@ -1,0 +1,38 @@
+{
+  "name": "elm-email-parser",
+  "version": "0.0.1-alpha.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/curtissimo/elm-email-parser.git"
+  },
+  "files": [
+  ],
+  "description": "RFC-2822- and RFC-6533-compliant email parsing and validation",
+  "devDependencies": {
+    "@curtissimo/elm-hot": "latest",
+    "@parcel/transformer-elm": "latest",
+    "concurrently": "^9.2.1",
+    "elm": "^0.19.1-6",
+    "elm-doc-preview": "^6.0.1",
+    "elm-format": "^0.8.8",
+    "elm-json": "^0.2.13",
+    "elm-review": "^2.13.5",
+    "elm-test": "^0.19.1-revision17",
+    "elm-verify-examples": "^6.0.3",
+    "parcel": "latest"
+  },
+  "scripts": {
+    "build:examples": "parcel build examples/src/index.html --dist-dir public --public-url ./",
+    "git:set-remote": "npm run git:set-remote:ssh",
+    "git:set-remote:http": "git remote add origin https://gitlab.com/curtissimo/elm-email-parser.git",
+    "git:set-remote:ssh": "git remote add origin git@gitlab.com:curtissimo/elm-email-parser.git",
+    "docs": "elm-doc-preview --no-browser",
+    "lint:format": "elm-format --validate src",
+    "lint:review": "elm-review",
+    "start": "parcel ./examples/src/index.html --dist-dir .development",
+    "postinstall": "node ./patch-elm-hot.mjs",
+    "test:docs": "elm-verify-examples --run-tests"
+  },
+  "author": "Curtis Schlak <696163-realistschuckle@users.noreply.gitlab.com>",
+  "license": "MIT"
+}

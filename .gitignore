@@ -1,0 +1,14 @@
+# BUILD STUFF
+.development/
+.parcel-cache/
+build/
+dist/
+public/
+
+# ELM STUFF
+elm-stuff/
+node_modules/
+tests/VerifyExamples
+
+# MACOS STUFF
+.DS_Store
